@@ -7,13 +7,6 @@ const TheContainer = () => import('@/containers/TheContainer')
 // Views
 const Dashboard = () => import('@/views/Dashboard')
 
-
-// Views - Pages
-const Page404 = () => import('@/views/pages/Page404')
-const Page500 = () => import('@/views/pages/Page500')
-const Login = () => import('@/views/pages/Login')
-const Register = () => import('@/views/pages/Register')
-
 const IP = () => import('@/views/ip/IP')
 const LatestIPs = () => import('@/views/ip/Latest')
 const IPsByASN = () => import('@/views/ip/ByASN')
