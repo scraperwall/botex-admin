@@ -37,3 +37,6 @@ Then it's only a matter of starting the UI with yarn:
 
 You should now be able to access it at the URL yarn prints to the console.
 
+## License
+
+Unless otherwise noted, the botex source files are distributed under the GNU AGPLv3 license found in the LICENSE file.
