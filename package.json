@@ -1,34 +1,24 @@
 {
-  "name": "@coreui/coreui-free-vue-admin-template",
-  "version": "3.1.1",
-  "description": "Open Source Bootstrap Admin Template",
+  "name": "@scraperwall/botex-admin",
+  "version": "1.0.0",
+  "description": "Web UI for ScraperWall's bot mitigation tool botex",
   "author": {
-    "name": "CoreUI",
-    "url": "https://coreui.io",
-    "github": "https://github.com/coreui",
-    "twitter": "https://twitter.com/core_ui"
+    "name": "ScraperWall",
+    "url": "https://scraperwall.com/",
+    "github": "https://github.com/scraperwall",
   },
-  "contributors": [
-    {
-      "name": "CoreUI Team",
-      "url": "https://github.com/orgs/coreui/people"
-    }
-  ],
+  "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git@github.com:coreui/coreui-free-vue-admin-template.git"
+    "url": "git@github.com:scraperwall/botex-admin.git"
   },
-  "homepage": "http://coreui.io",
-  "copyright": "Copyright 2020 creativeLabs Łukasz Holeczek",
-  "license": "MIT",
+  "homepage": "http://scraperwall.com/",
+  "copyright": "Copyright 2021 ScraperWall Tobias von Dewitz",
+  "license": "AGPL-3.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
+    "serve": "yarn run serve",
+    "build": "yarn build",
     "clearCache": "jest --clearCache",
-    "release": "npm-run-all clearCache lint build test:unit test:e2e",
     "auto-changelog": "auto-changelog  --hide-credit --commit-limit false --package --backfill-limit 0 --starting-version 3.0.0-beta.0"
   },
   "dependencies": {
