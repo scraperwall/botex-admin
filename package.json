@@ -1,24 +1,33 @@
 {
   "name": "@scraperwall/botex-admin",
   "version": "1.0.0",
-  "description": "Web UI for ScraperWall's bot mitigation tool botex",
+  "description": "Web UI for ScraperWall's open source bot mitigation tool botex",
   "author": {
-    "name": "ScraperWall",
+    "name": "Botex",
     "url": "https://scraperwall.com/",
-    "github": "https://github.com/scraperwall",
+    "github": "https://github.com/scraperwall/",
   },
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "Tobias von Dewitz",
+      "url": "https://github.com/scraperwall/"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:scraperwall/botex-admin.git"
   },
   "homepage": "http://scraperwall.com/",
-  "copyright": "Copyright 2021 ScraperWall Tobias von Dewitz",
-  "license": "AGPL-3.0",
+  "copyright": "Copyright 2021 ScraperWall, Tobias von Dewitz",
+  "license": "AGPL",
   "scripts": {
-    "serve": "yarn run serve",
-    "build": "yarn build",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
     "clearCache": "jest --clearCache",
+    "release": "npm-run-all clearCache lint build test:unit test:e2e",
     "auto-changelog": "auto-changelog  --hide-credit --commit-limit false --package --backfill-limit 0 --starting-version 3.0.0-beta.0"
   },
   "dependencies": {
